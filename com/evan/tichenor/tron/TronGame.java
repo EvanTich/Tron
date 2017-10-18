@@ -71,10 +71,6 @@ public class TronGame extends Canvas {
             g.setFill(Color.BLACK);
             g.fillRect(0, 0, getWidth(), getHeight());
 
-            for(int i = 0; i < TILES_Y; i++)
-                for(int j = 0; j < TILES_X; j++)
-                    g.fillRect(j * BLOCK_SIZE, i * BLOCK_SIZE, 2, 2);
-
             bikes.forEach(bike -> bike.draw(g));
         }
     }
